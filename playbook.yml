@@ -7,7 +7,7 @@
     DISABLE_ALLOCATION_REQUEST:  '{"transient":{"cluster.routing.allocation.enable":"none"}}'
     ENABLE_ALLOCATION_REQUEST: '{"transient":{"cluster.routing.allocation.enable":"all"}}'
     perform_flush: true    
-    ignore_failed_flush: true 
+    ignore_failed_flush: false 
 
   tasks:
     - debug: msg={{ignore_failed_flush}} 
