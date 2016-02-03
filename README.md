@@ -4,6 +4,7 @@ This playbook will perform a rolling restart of an Elasticsearch cluster based o
 Additionally it is possible to perform a [synced flush](https://www.elastic.co/guide/en/elasticsearch/reference/2.2/indices-synced-flush.html) before stopping the service to ensure all data has 
 been persisted to disc. In the default configuration the playbook will fail if any 
 shards return an error during the synced flush. 
+The playbook is easily extended to perform mainenance tasks like upgrades as part of the rolling restart.
 
 ##Installation
 ============
